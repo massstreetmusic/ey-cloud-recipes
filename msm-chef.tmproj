@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>../msm/cookbooks/link_images/recipes/default.rb</string>
+	<string>cookbooks/link_images/recipes/default.rb</string>
 	<key>documents</key>
 	<array>
 		<dict>
@@ -23,7 +23,7 @@
 	<integer>347</integer>
 	<key>metaData</key>
 	<dict>
-		<key>../msm/Rakefile</key>
+		<key>Rakefile</key>
 		<dict>
 			<key>caret</key>
 			<dict>
@@ -37,7 +37,7 @@
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
 		</dict>
-		<key>../msm/cookbooks/link_images/recipes/default.rb</key>
+		<key>cookbooks/link_images/recipes/default.rb</key>
 		<dict>
 			<key>caret</key>
 			<dict>
@@ -54,8 +54,8 @@
 	</dict>
 	<key>openDocuments</key>
 	<array>
-		<string>../msm/Rakefile</string>
-		<string>../msm/cookbooks/link_images/recipes/default.rb</string>
+		<string>Rakefile</string>
+		<string>cookbooks/link_images/recipes/default.rb</string>
 	</array>
 	<key>showFileHierarchyDrawer</key>
 	<true/>
