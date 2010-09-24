@@ -4,7 +4,7 @@
 #
 
 node[:applications].each do |app_name,data|
-  %w{newsletters images/catalog blurbs ebay}.each{ |directory|  
+  %w{newsletters images/catalog images/blurbs images/ebay}.each{ |directory|  
     link "/data/#{app_name}/current/public/#{directory}" do
       to "/data/#{app_name}/shared/public/#{directory}"
     end
