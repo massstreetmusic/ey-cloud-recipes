@@ -7,7 +7,7 @@ puts node[:instance_role]
 puts node[:instance_role]
 node[:applications].each do |app_name,data|
   {'gbase-csv-generate'=>[5,0], 'lownotes-csv-generate'=>[5,1]}.each do |job, hour_minute|
-    cron "gbase-csv-generate" do
+    cron job do
       action  :create
       hour hour_minute.first
       minute hour_minute.last
