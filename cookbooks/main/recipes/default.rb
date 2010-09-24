@@ -63,4 +63,4 @@
 #uncomment to include the eybackup_verbose recipe
 #require_recipe "eybackup_verbose"
 
-require_require 'link_images'
+require_recipe 'link_images'
