@@ -65,3 +65,4 @@
 
 require_recipe 'link_images'
 require_recipe 'crontab_mailto'
+require_recipe 'msm_crons'
