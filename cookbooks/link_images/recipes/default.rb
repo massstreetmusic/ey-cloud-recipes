@@ -4,9 +4,14 @@
 #
 
 node[:applications].each do |app_name,data|
-  %w{newsletters images/catalog images/blurbs images/ebay}.each{ |directory|  
-    link "/data/#{app_name}/current/public/#{directory}" do
-      to "/data/#{app_name}/shared/public/#{directory}"
+  link "/data/#{app_name}/current/public/newsletters" do
+    to "/data/#{app_name}/shared/public/newsletters"
+  end
+  
+  %w{catalog blurbs ebay}.each{ |directory|  
+    link "/data/#{app_name}/current/public/images/#{directory}" do
+      to "/data/#{app_name}/shared/#{directory}"
     end
   }
+
 end
