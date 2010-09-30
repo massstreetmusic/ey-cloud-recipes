@@ -64,5 +64,6 @@
 #require_recipe "eybackup_verbose"
 
 require_recipe 'link_images'
+require_recipe 'link_configs'
 require_recipe 'crontab_mailto'
 require_recipe 'msm_crons'

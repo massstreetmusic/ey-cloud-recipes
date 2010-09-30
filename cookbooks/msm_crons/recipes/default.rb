@@ -7,8 +7,7 @@ if ['solo', 'app', 'app_master'].include?(node[:instance_role])
     {'gbase-csv-generate'=>[5,0], 
       'lownotes-csv-generate'=>[5,1], 
       'google-base-csv-generate'=>[5,2],
-      'oodle-csv-generate'=>[5,3],
-      'mygear-csv-generate'=>[5,4]}.each do |job, hour_minute|
+      'oodle-csv-generate'=>[5,3]}.each do |job, hour_minute|
       cron job do
         action  :create
         hour hour_minute.first
