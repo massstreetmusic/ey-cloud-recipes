@@ -15,7 +15,7 @@ if ['solo', 'app', 'app_master'].include?(node[:instance_role])
         day      '*'
         month    '*'
         weekday  '*'
-        command "cd /data/#{app_name}/current && script/runner -e #{node[:environment]} cron/#{job}.rb"
+        command "cd /data/#{app_name}/current && script/runner -e #{node[:environment][:framework_env]} cron/#{job}.rb"
 
         user node[:owner_name]
       end  
@@ -27,7 +27,7 @@ if ['solo', 'app', 'app_master'].include?(node[:instance_role])
       day      '*'
       month    '*'
       weekday  '*'
-      command "cd /data/#{app_name}/current && ruby cron/mygear-csv-generate.rb production"
+      command "cd /data/#{app_name}/current && ruby cron/mygear-csv-generate.rb #{node[:environment][:framework_env]}"
     end  
   end
 end
