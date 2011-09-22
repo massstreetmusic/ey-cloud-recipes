@@ -20,7 +20,7 @@ if ['solo', 'app', 'app_master'].include?(node[:instance_role])
       end  
     end
 
-    cron job do
+    cron 'Generate GoogleBase File' do
       action  :create
       hour     '*'
       minute   '5'
